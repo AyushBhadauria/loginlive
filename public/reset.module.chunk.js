@@ -18,7 +18,6 @@ module.exports = "<div *ngIf=loading class=\"loading\">Loading&#8230;</div>\n\n<
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_switchMap__ = __webpack_require__("../../../../rxjs/_esm5/add/operator/switchMap.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__angular_forms__ = __webpack_require__("../../../forms/esm5/forms.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__sign_up_validators_form_validators__ = __webpack_require__("../../../../../src/app/components/sign-up/validators/form.validators.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__angular_platform_browser__ = __webpack_require__("../../../platform-browser/esm5/platform-browser.js");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -35,13 +34,11 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
-
 var ResetComponent = /** @class */ (function () {
-    function ResetComponent(route, authService, router, fb, titleService) {
+    function ResetComponent(route, authService, router, fb) {
         this.route = route;
         this.authService = authService;
         this.router = router;
-        this.titleService = titleService;
         this.loading = false;
         this.form = fb.group({
             newPass: ['', [
@@ -75,7 +72,6 @@ var ResetComponent = /** @class */ (function () {
     };
     ResetComponent.prototype.ngOnInit = function () {
         var _this = this;
-        this.titleService.setTitle('Reset Password');
         this.route.paramMap
             .subscribe(function (params) {
             _this.token = params.get('token');
@@ -108,8 +104,7 @@ var ResetComponent = /** @class */ (function () {
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* ActivatedRoute */],
             __WEBPACK_IMPORTED_MODULE_2__services_auth_service__["a" /* AuthService */],
             __WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* Router */],
-            __WEBPACK_IMPORTED_MODULE_4__angular_forms__["a" /* FormBuilder */],
-            __WEBPACK_IMPORTED_MODULE_6__angular_platform_browser__["b" /* Title */]])
+            __WEBPACK_IMPORTED_MODULE_4__angular_forms__["a" /* FormBuilder */]])
     ], ResetComponent);
     return ResetComponent;
 }());

@@ -531,7 +531,8 @@ var AuthService = /** @class */ (function () {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return EndPoint; });
-var host = "http://localhost:8080";
+// const host="http://localhost:8080"
+var host = "";
 var EndPoint = /** @class */ (function () {
     function EndPoint() {
     }
