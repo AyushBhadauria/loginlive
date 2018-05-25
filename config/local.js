@@ -9,8 +9,8 @@ module.exports={
     mailer: {
         'service': 'smtp',
         'auth': {
-          'user':'ayushkickass@gmail.com',
-           'pass': 'ayushMean@123'          
+          'user':'Name',
+           'pass': 'Password'          
         },
         'from': 'loginModule <admin@loginModule.in>',
     },
