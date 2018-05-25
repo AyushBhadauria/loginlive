@@ -1,5 +1,5 @@
 
-var baseUrl = 'https://www.loginmodule.herokuapp.com'
+var baseUrl = 'https://www.logindemomodule.herokuapp.com'
 module.exports={
     baseUrl: baseUrl,
     database: 'mongodb://user:123456@ds235840.mlab.com:35840/logindemonew',
